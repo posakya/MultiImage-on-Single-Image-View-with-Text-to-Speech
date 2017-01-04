@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.roshan.text_to_speech">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/welcome"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".WelcomeScreen"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".MainActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Bhaktapur_Durbar_Square"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Kathmandu_Durbar_Square"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".HomeActivity"
+            android:screenOrientation="portrait" />
+        <activity android:name=".Lamatar"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".Tokha"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".Siddhipur"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".Bouddha"
+            android:screenOrientation="portrait"></activity>
+    </application>
+
+</manifest>

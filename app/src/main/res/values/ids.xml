@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="hanuman" type="id">Now you are in Mangal Bazar</item>
+    <item name="patan" type="id">You are infront of Patan Durbar Square Entrance Gate</item>
+    <item name="museum" type="id">You are infront of Museum Entance Gate</item>
+    <item name="krishna" type="id">This is a Krishna Mandir</item>
+    <item name="lalitpur" type="id">Now you are infront of Lalitpur Chamber of Commerce and Industry</item>
+    <item name="handi" type="id">You are infront of HandiCraft House</item>
+    <item name="goldentemple" type="id">This is Golden Temple</item>
+    <item name="way" type="id">You are in Banglamukhi Chowk</item>
+    <item name="banglamuckhi" type="id"> Banglamukhi Temple Backdoor is on your right side</item>
+    <item name="banglamukhimandir" type="id">Banglamukhi Mandir</item>
+    <item name="at_mangal_bazar" type="id">You are in BanglaMukhi Mandir</item>
+    <item name="patan_durbar" type="id">Head 20 meter North</item>
+    <item name="museum_gate" type="id">Head 20 meter North</item>
+    <item name="krishna_mandir" type="id">Turn 180 degree</item>
+    <item name="lalitpur_chamber" type="id">Head 50 meter North</item>
+    <item name="handi_craft" type="id">Turn left and Head 100 meter West</item>
+    <item name="golden_temple" type="id">Head 150 meter North</item>
+    <item name="way_to_banglamukhi" type="id">Move 100 meter ahead</item>
+    <item name="banglamuckhi_backdoor" type="id">Move 150 meter ahead</item>
+    <item name="banglamukhi_mandir" type="id">Enter through and turn right</item>
+    <item name="action_setting" type="id">About Us</item>
+    <item name="kathmandu_durbar" type="id">You are in kathmandu durbar square</item>
+    <item name="ktm_mall" type="id">Head 100 meter East</item>
+    <item name="india" type="id">Turn left and Head 300 meter North </item>
+    <item name="juddha" type="id">Head 100 meter North</item>
+    <item name="basantapur" type="id">Turn right and Head 10 meter East</item>
+    <item name="ktm_mall1" type="id">You are infront of Kathmandu Mall</item>
+    <item name="india1" type="id">Here you are infront of  India Nepal Library</item>
+    <item name="juddha1" type="id">Now you are infront of Juddha Samser Statue</item>
+    <item name="basantapur1" type="id">You are in Basantapur now</item>
+    <item name="ktm_durbar1" type="id">This is Kathmandu Durbar Square</item>
+    />
+</resources>
