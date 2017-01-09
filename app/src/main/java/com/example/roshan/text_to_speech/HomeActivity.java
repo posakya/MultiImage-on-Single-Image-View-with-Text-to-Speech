@@ -1,6 +1,7 @@
 package com.example.roshan.text_to_speech;
 
 import android.content.Intent;
+import android.graphics.Path;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -28,25 +29,31 @@ public class HomeActivity extends AppCompatActivity implements View.OnClickListe
         btn_bouddha.setOnClickListener(this);
         btn_siddhipur.setOnClickListener(this);
         btn_tokha.setOnClickListener(this);
+        HomeActivity.this.setTitle("Location");
     }
 
     @Override
     public void onClick(View view) {
         if (view == btn_bkt){
-            startActivity(new Intent(getApplicationContext(),Bhaktapur_Durbar_Square.class));
+            startActivity(new Intent(getApplicationContext(),Direction.class));
         }else if (view == btn_patan){
-            startActivity(new Intent(getApplicationContext(),MainActivity.class));
+            startActivity(new Intent(getApplicationContext(),Direction.class));
         }else if(view == btn_ktm){
-            startActivity(new Intent(getApplicationContext(),Kathmandu_Durbar_Square.class));
+            startActivity(new Intent(getApplicationContext(),Direction.class));
         }else if(view == btn_bouddha){
-            startActivity(new Intent(getApplicationContext(),Bouddha.class));
+            startActivity(new Intent(getApplicationContext(),Direction.class));
         }else if(view == btn_siddhipur){
-            startActivity(new Intent(getApplicationContext(),Siddhipur.class));
+            startActivity(new Intent(getApplicationContext(),Direction.class));
         }else if(view == btn_lamatar){
-            startActivity(new Intent(getApplicationContext(),Lamatar.class));
+            startActivity(new Intent(getApplicationContext(),Direction.class));
         }else if(view == btn_tokha){
-            startActivity(new Intent(getApplicationContext(),Tokha.class));
+            startActivity(new Intent(getApplicationContext(),Direction.class));
         }
 
+    }
+
+    @Override
+    public void onBackPressed() {
+        this.finishAffinity();
     }
 }

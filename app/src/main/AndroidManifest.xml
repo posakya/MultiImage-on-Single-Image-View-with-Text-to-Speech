@@ -6,6 +6,7 @@
         android:allowBackup="true"
         android:icon="@drawable/welcome"
         android:label="@string/app_name"
+        android:screenOrientation="portrait"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
@@ -18,7 +19,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".MainActivity"
+            android:name=".patan_durbar_square.MainActivity"
             android:screenOrientation="portrait" />
         <activity
             android:name=".Bhaktapur_Durbar_Square"
@@ -29,13 +30,30 @@
         <activity
             android:name=".HomeActivity"
             android:screenOrientation="portrait" />
-        <activity android:name=".Lamatar"
+        <activity
+            android:name=".Lamatar"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Tokha"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Siddhipur"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Bouddha"
+            android:screenOrientation="portrait" />
+        <activity android:name=".PlaceActivity"
             android:screenOrientation="portrait"/>
-        <activity android:name=".Tokha"
-            android:screenOrientation="portrait"/>
-        <activity android:name=".Siddhipur"
-            android:screenOrientation="portrait"/>
-        <activity android:name=".Bouddha"
+        <activity
+            android:name=".patan_durbar_square.Museum"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".patan_durbar_square.Krishna_Mandir"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".patan_durbar_square.Golden_Temple"
+            android:screenOrientation="portrait" />
+        <activity android:name=".Direction"
             android:screenOrientation="portrait"></activity>
     </application>
 

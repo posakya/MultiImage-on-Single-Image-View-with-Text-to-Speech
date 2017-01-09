@@ -10,7 +10,7 @@
     <item name="way" type="id">You are in Banglamukhi Chowk</item>
     <item name="banglamuckhi" type="id"> Banglamukhi Temple Backdoor is on your right side</item>
     <item name="banglamukhimandir" type="id">Banglamukhi Mandir</item>
-    <item name="at_mangal_bazar" type="id">You are in BanglaMukhi Mandir</item>
+    <item name="at_mangal_bazar" type="id">You are at BanglaMukhi Mandir</item>
     <item name="patan_durbar" type="id">Head 20 meter North</item>
     <item name="museum_gate" type="id">Head 20 meter North</item>
     <item name="krishna_mandir" type="id">Turn 180 degree</item>
@@ -31,5 +31,12 @@
     <item name="juddha1" type="id">Now you are infront of Juddha Samser Statue</item>
     <item name="basantapur1" type="id">You are in Basantapur now</item>
     <item name="ktm_durbar1" type="id">This is Kathmandu Durbar Square</item>
+    <item name="at_museum" type="id">Museum</item>
+    <item name="at_golder_temple" type="id">Golden Temple</item>
+    <item name="banglamukhi_temple" type="id">Banglamukhi Mandir</item>
+    <item name="at_krishna_mandir" type="id">Krishna Mandir</item>
+    <item name="golden_temple1" type="id">You are at Golden Temple</item>
+    <item name="krishna_mandir1" type="id">You are at Krishna Mandir</item>
+    <item name="museum_gate1" type="id">You are infront of Museum Entrance Gate</item>
     />
 </resources>

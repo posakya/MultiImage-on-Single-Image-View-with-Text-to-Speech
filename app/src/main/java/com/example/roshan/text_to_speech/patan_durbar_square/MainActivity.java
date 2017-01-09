@@ -1,21 +1,23 @@
-package com.example.roshan.text_to_speech;
+package com.example.roshan.text_to_speech.patan_durbar_square;
 
 import android.content.Intent;
-import android.speech.tts.TextToSpeech;
 import android.os.Bundle;
+import android.speech.tts.TextToSpeech;
 import android.support.v7.app.AppCompatActivity;
 import android.text.method.ScrollingMovementMethod;
 import android.view.View;
 import android.widget.Button;
-import android.widget.ImageButton;
 import android.widget.ImageView;
-import android.widget.LinearLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.example.roshan.text_to_speech.HomeActivity;
+import com.example.roshan.text_to_speech.PlaceActivity;
+import com.example.roshan.text_to_speech.R;
+
 import java.util.Locale;
 
-public class Siddhipur extends AppCompatActivity {
+public class MainActivity extends AppCompatActivity {
     TextToSpeech t1;
     TextView txt_deatil,txt_Speech;
     Button btn_next,btn_previous,btn_home;
@@ -32,7 +34,7 @@ public class Siddhipur extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_about__us);
-        txt_deatil = (TextView) findViewById(R.id.txt_detail);
+       txt_deatil = (TextView) findViewById(R.id.txt_detail);
         txt_Speech = (TextView) findViewById(R.id.txt_speech);
         btn_next = (Button) findViewById(R.id.btn_next);
         btn_home = (Button) findViewById(R.id.btn_home);
@@ -41,9 +43,8 @@ public class Siddhipur extends AppCompatActivity {
         imageView = (ImageView) findViewById(R.id.imageView);
         arrow_image = (ImageView) findViewById(R.id.arrow_image);
 
-
         txt_deatil.setMovementMethod(new ScrollingMovementMethod());
-        Siddhipur.this.setTitle("Siddhipur");
+        MainActivity.this.setTitle("BanglaMukhi Mandir");
         t1=new TextToSpeech(getApplicationContext(), new TextToSpeech.OnInitListener() {
             @Override
             public void onInit(int status) {
@@ -67,37 +68,38 @@ public class Siddhipur extends AppCompatActivity {
         btn_home.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                startActivity(new Intent(getApplicationContext(),HomeActivity.class));
+                startActivity(new Intent(getApplicationContext(),PlaceActivity.class));
             }
         });
 
         btn_next.setOnClickListener(new View.OnClickListener() {
-                                        @Override
-                                        public void onClick(View v) {
-                                            btn_previous.setVisibility(View.VISIBLE);
-                                            text++;
-                                            image = image % ArrayImage.length;
-                                            text = text % Text.length;
-                                            array = array % Array.length;
-                                            txt_deatil.setText(Array[array]);
-                                            txt_Speech.setText(Text[text]);
-                                            imageView.setImageResource(ArrayImage[image]);
-                                            arrow_image.setImageResource(ArrowLenght[Arrow]);
-                                            array++;
-                                            Arrow ++;
-                                            image++;
-                                            String toSpeak = txt_Speech.getText().toString();
+            @Override
+            public void onClick(View v) {
+                btn_previous.setVisibility(View.VISIBLE);
+                text++;
+                image = image % ArrayImage.length;
+                 text = text % Text.length;
+                array = array % Array.length;
+                txt_deatil.setText(Array[array]);
+                txt_Speech.setText(Text[text]);
+                imageView.setImageResource(ArrayImage[image]);
+                arrow_image.setImageResource(ArrowLenght[Arrow]);
+                array++;
+                Arrow ++;
+                image++;
+                String toSpeak = txt_Speech.getText().toString();
 
-                                            Toast.makeText(getApplicationContext(), toSpeak,Toast.LENGTH_SHORT).show();
-                                            t1.speak(toSpeak, TextToSpeech.QUEUE_FLUSH, null);
-                                            if (image == 10){
-                                                btn_next.setVisibility(View.GONE);
-                                                btn_home.setVisibility(View.VISIBLE);
-                                                btn_previous.setVisibility(View.VISIBLE);
-                                            }
-                                        }
+                Toast.makeText(getApplicationContext(), toSpeak,Toast.LENGTH_SHORT).show();
+                t1.speak(toSpeak, TextToSpeech.QUEUE_FLUSH, null);
+                if (image == 10){
+                    btn_next.setVisibility(View.GONE);
+                    btn_home.setVisibility(View.VISIBLE);
+                    btn_previous.setVisibility(View.VISIBLE);
+                    arrow_image.setVisibility(View.GONE);
+                }
+            }
 
-                                    }
+        }
         );
 
         btn_previous.setOnClickListener(new View.OnClickListener() {
@@ -123,7 +125,7 @@ public class Siddhipur extends AppCompatActivity {
                 Toast.makeText(getApplicationContext(), toSpeak,Toast.LENGTH_SHORT).show();
                 t1.speak(toSpeak, TextToSpeech.QUEUE_FLUSH, null);
                 if (image == 0){
-                    startActivity(new Intent(getApplicationContext(),HomeActivity.class));
+                   startActivity(new Intent(getApplicationContext(),PlaceActivity.class));
                 }
             }
         });
@@ -137,4 +139,5 @@ public class Siddhipur extends AppCompatActivity {
         }
         super.onPause();
     }
+
 }
